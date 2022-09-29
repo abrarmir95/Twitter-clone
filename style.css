@@ -1,0 +1,191 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Slab', serif;
+    outline: none;
+}
+
+/* html { */
+/* font-size: 62.5%; */
+/* } */
+
+body {
+    background-color: #f0f8fd;
+
+}
+
+.main-page {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    /* grid-template-column divides into mentioned no. of row and columns */
+    grid-template-columns: repeat(2, 1fr);
+    /* 1fr for first row and for footer as much space as required i.e mincontent */
+    grid-template-rows: 1fr min-content;
+}
+
+.mainpage-footer li {
+    text-decoration: none;
+    display: inline;
+}
+
+.left-side {
+    /* grid-column or grid-row assigns specific rows adn columns */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #1aa1f5;
+    /* to move content inside we use flex*/
+    display: flex;
+    /* justify content brings content to center horizontally */
+    justify-content: center;
+    /* align items brings content to center vertically */
+    align-items: center;
+}
+
+.left-side-content div {
+    /* display flex here brings icons and divs in one line */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 30px;
+    color: white;
+}
+
+.left-side-content h3 {
+    font-size: 13px;
+}
+
+/* changing icons appearance */
+.left-side-content i {
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.right-side {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+}
+
+.right-side-upper-form {
+    display: flex;
+    /* justify content brings content to center horizontally */
+    justify-content: center;
+    margin-top: 17px;
+
+}
+
+.right-side-middle-content {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: 132px;
+}
+
+.right-side-middle-content h1 {
+    margin-bottom: 34px;
+    font-size: 20px;
+}
+
+.btn-top {
+    padding: 5px 10px;
+    margin-top: 11px;
+    margin-bottom: 21px;
+    margin-left: 448px;
+    border-radius: 14px;
+    background-color: #f0f8fd;
+    color: #1aa1f5;
+    border: 1px solid #1aa1f5;
+    position: absolute;
+    font: bold;
+    /* defining transition to include the timing as well. Already learnt about transitions */
+    transition: background-color .3s;
+
+}
+
+.btn-top:hover {
+    background-color: #d9ebf7;
+}
+
+.right-side-upper-form div {
+    /* position: relative; */
+    padding: 10px;
+}
+
+.right-side-upper-form input {
+    border: 0px;
+
+    padding: 6px 0px 6px 7px;
+}
+
+.right-side-upper-form label {
+    color: rgb(243, 167, 61);
+    font-size: 12px;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* .right-side-middle-content {
+    margin-top: 140px;
+} */
+
+.right-side-middle-content i {
+    color: #1aa1f5;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.sign-up {
+    background-color: #1aa1f5;
+    color: white;
+    margin-top: 17px;
+    padding: 3px 124px;
+    border-radius: 14px;
+    border: 0px;
+    transition: background-color .4s;
+}
+
+.sign-up:hover {
+    background-color: #0f5d8d;
+}
+
+.log-in {
+    border: 1px solid #1aa1f5;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 2px 128px;
+    border-radius: 14px;
+    transition: background-color .4s;
+}
+
+.log-in:hover {
+    background-color: #d9ebf7;
+}
+
+h4 {
+    font-size: 16px;
+}
+.mainpage-footer{
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    /* height: 40px; */
+    padding: 15px;
+    background-color: #f5f4f4;
+    /* creating top border */
+    border-top: 1px solid #ddd;
+}
+.mainpage-footer ul{
+    display: flex;
+    /* elements in center vertically by align-items */
+    align-items: center;
+    /* elements in center horizontally by justify-content */
+    justify-content: center;
+}
+.mainpage-footer a{
+    text-decoration: none;
+    padding: 13px;
+    color: #444;
+    font-weight: 300;
+}
